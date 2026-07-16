@@ -3,7 +3,7 @@
 # Source URL: https://launchpad.net/ubuntu/+source/ubuntu-wallpapers
 
 pkgname=jappeos_wallpapers
-pkgver=1.0.3
+pkgver=1.0.4
 _tag=main-v1.0.3-1
 pkgrel=1
 pkgdesc="Default wallpapers for JappeOS, based on Ubuntu community wallpapers"
