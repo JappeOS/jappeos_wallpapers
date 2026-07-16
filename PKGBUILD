@@ -4,7 +4,7 @@
 
 pkgname=jappeos_wallpapers
 pkgver=1.0.2
-_tag=main-v1.0.1-1
+_tag=main-v1.0.2-1
 pkgrel=1
 pkgdesc="Default wallpapers for JappeOS, based on Ubuntu community wallpapers"
 arch=('any')
