@@ -1,0 +1,23 @@
+name: Release
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "PKGBUILD"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    uses: JappeOS/jappeos-workflows/.github/workflows/release.yml@main
+    secrets: inherit
+  build:
+    needs: release
+    uses: JappeOS/jappeos-workflows/.github/workflows/build-package.yml@main
+    with:
+      package-name: jappeos-wallpapers
+      channel: all
+      commit-sha: ${{ needs.release.outputs.commit-sha }}
+    secrets: inherit
