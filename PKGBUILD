@@ -3,7 +3,7 @@
 # Source URL: https://launchpad.net/ubuntu/+source/ubuntu-wallpapers
 
 pkgname=jappeos_wallpapers
-pkgver=1.0.1
+pkgver=1.0.2
 _tag=main-v1.0.0-1
 pkgrel=1
 pkgdesc="Default wallpapers for JappeOS, based on Ubuntu community wallpapers"
@@ -13,9 +13,8 @@ license=('CC-BY-SA-3.0')
 source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/$_tag.tar.gz")
 sha256sums=('SKIP')
 
-_bundle="$srcdir/$pkgname-$_tag"
-
 package() {
+  local _bundle="$srcdir/$pkgname-$_tag"
   cd "$_bundle"
 
   local backgrounds_dir="$pkgdir/usr/share/backgrounds/jappeos"
